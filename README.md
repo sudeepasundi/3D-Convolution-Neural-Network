@@ -13,11 +13,11 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 ## Project Structure
 ```
 .
-├── cnn_3d_convolution.v   # 3D Convolution Module
-├── cnn_3d_max_pooling.v   # Max Pooling Module
-├── cnn_fc.v               # Fully Connected Layer Module
-├── cnn_3d_top.v           # Top-Level Module
-├── tb_cnn_3d.v            # Testbench
+├── cnn_3d_convolution.sv   # 3D Convolution Module
+├── cnn_3d_max_pooling.sv   # Max Pooling Module
+├── cnn_fc.sv               # Fully Connected Layer Module
+├── cnn_3d_top.sv           # Top-Level Module
+├── tb_cnn_3d.sv            # Testbench
 ├── image_data.txt         # Image data for convolution
 ├── filter_data.txt        # Filter data for convolution
 ├── fc_weights.txt         # Weights for fully connected layer
@@ -35,22 +35,22 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 |                     | `NUM_OUTPUTS`  | Number of outputs from fully connected layer | 2        |
 
 ## File Descriptions
-1. **cnn_3d_convolution.v**: 
+1. **cnn_3d_convolution.sv**: 
    - Performs 3D convolution by sliding filters over the input image.
    - Reads data from `image_data.txt` and `filter_data.txt`.
 
-2. **cnn_3d_max_pooling.v**: 
+2. **cnn_3d_max_pooling.sv**: 
    - Applies a max-pooling operation to reduce dimensionality.
 
-3. **cnn_fc.v**: 
+3. **cnn_fc.sv**: 
    - Processes the output of the pooling layer through a fully connected layer.
    - Weights and constants are loaded from `fc_weights.txt` and `fc_weights2.txt`.
 
-4. **cnn_3d_top.v**: 
+4. **cnn_3d_top.sv**: 
    - Integrates the convolution, pooling, and fully connected modules.
    - Manages control signals and data flow between modules.
 
-5. **tb_cnn_3d.v**: 
+5. **tb_cnn_3d.sv**: 
    - Provides a testbench for validating the design.
    - Displays intermediate and final outputs for debugging.
 
@@ -59,8 +59,8 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 - Verilog simulator (e.g., ModelSim, Vivado, or any compatible simulator).
 
 ### Steps
-1. Compile all Verilog files.
-2. Load the `tb_cnn_3d.v` file.
+1. Compile all SystemVerilog files.
+2. Load the `tb_cnn_3d.sv` file.
 3. Run the simulation.
 4. Observe results for convolution, pooling, and fully connected stages.
 
