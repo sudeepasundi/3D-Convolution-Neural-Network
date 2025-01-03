@@ -68,6 +68,8 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 - **Convolution Results**: Displayed for each filter.
 - **Pooling Results**: Reduced dimensions for each filter.
 - **Final Outputs**: Values from the fully connected layer.
+  ![Output](https://github.com/user-attachments/assets/3333aca1-84e7-4043-93bd-68e10f753ac7)
+
 
 ## Usage
 ### Modify Parameters
