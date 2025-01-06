@@ -1,5 +1,8 @@
 # 3D-Convolution-Neural-Network
 
+## Visualisation
+Explore the CNN architecture through this interactive visualization: [CNN Architecture Visualisation](https://cnn-architecture-visualisation.netlify.app/)
+
 ## Overview
 This project implements a 3D Convolutional Neural Network (CNN) accelerator using Verilog. The accelerator processes 3D image and filter data to perform convolution, max pooling, and feedforward operations through dedicated hardware modules. The design leverages finite state machines (FSMs) for control logic and operates on data stored in main memory.
 
@@ -70,7 +73,6 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 - **Final Outputs**: Values from the fully connected layer.
   ![Output](https://github.com/user-attachments/assets/3333aca1-84e7-4043-93bd-68e10f753ac7)
 
-
 ## Usage
 ### Modify Parameters
 You can adjust the parameters like `IMG_SIZE`, `FILT_SIZE`, or `POOL_SIZE` in the respective modules to adapt to different data sizes and configurations.
@@ -83,3 +85,4 @@ This project utilizes FSM-based control logic and modular design for scalability
 
 ---
 Feel free to reach out for questions or contributions!
+
