@@ -30,12 +30,12 @@ This project implements a 3D Convolutional Neural Network (CNN) accelerator usin
 ## Parameters
 | Module              | Parameter      | Description                             | Default Value |
 |---------------------|----------------|-----------------------------------------|---------------|
-| `cnn_3d_convolution` | `IMG_SIZE`     | Size of input image                     | 6             |
-|                     | `FILT_SIZE`    | Size of convolution filter              | 3             |
-|                     | `NUM_FILTERS`  | Number of filters                       | 3             |
-| `cnn_3d_max_pooling`| `POOL_SIZE`    | Size of pooling window                  | 2             |
-| `cnn_fc`            | `NUM_INPUTS`   | Number of inputs to fully connected layer | 24            |
-|                     | `NUM_OUTPUTS`  | Number of outputs from fully connected layer | 2        |
+| `cnn_3d_convolution` | `IMG_SIZE`     | Size of input image                     | 6x6x6            |
+|                     | `FILT_SIZE`    | Size of convolution filter              | 3x3x3             |
+|                     | `NUM_FILTERS`  | Number of filters                       | 3                 |
+| `cnn_3d_max_pooling`| `POOL_SIZE`    | Size of pooling window                  | 2x2x2             |
+| `cnn_fc`            | `NUM_INPUTS`   | Number of inputs to fully connected layer | 24              |
+|                     | `NUM_OUTPUTS`  | Number of outputs from fully connected layer | 2            |
 
 ## File Descriptions
 1. **cnn_3d_convolution.sv**: 
